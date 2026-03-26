@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Command Center | Nicolli Rezk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/dashboard.css?v=2.0">
+</head>
+<body>
+    <div class="app-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Career : AI</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" data-section="overview">
+                        Visão Geral
+                    </li>
+                    <li data-section="portfolio">
+                        Portfólio
+                    </li>
+                    <li data-section="jobs">
+                        Vagas & Propostas
+                    </li>
+                    <li data-section="agent">
+                        Assistente IA
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">NR</div>
+                <div class="info">
+                    <p class="name">Nicolli Rezk</p>
+                    <p class="role">UX/UI Designer & Dev</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="header-search">
+                    <input type="text" placeholder="Pesquisar projetos ou vagas...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary" id="btn-sync">Sincronizar Dados</button>
+                    <div class="status-indicator online">Sistema Ativo</div>
+                </div>
+            </header>
+
+            <section id="content-area">
+                <!-- Content will be injected here by JS -->
+                <div class="loading">Carregando Command Center...</div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals / Overlays -->
+    <div id="modal-container" class="hidden"></div>
+
+    <!-- Firebase SDK (Modular) -->
+    <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js",
+        "firebase/auth": "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js",
+        "firebase/firestore": "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js"
+      }
+    }
+    </script>
+    <script type="module" src="/static/js/dashboard.js"></script>
+</body>
+
+</html>

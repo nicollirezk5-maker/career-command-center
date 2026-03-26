@@ -1,0 +1,46 @@
+﻿{
+    "projects":  [
+                     {
+                         "description":  "Projeto de portfólio localizado em food-delivery.",
+                         "icon":  "💻",
+                         "id":  "food-delivery",
+                         "name":  "Food Delivery",
+                         "tags":  "Web Dev Fullstack"
+                     },
+                     {
+                         "description":  "Projeto de portfólio localizado em gym-website.",
+                         "icon":  "💻",
+                         "id":  "gym-website",
+                         "name":  "Gym Website",
+                         "tags":  "Web Dev Fullstack"
+                     },
+                     {
+                         "description":  "Projeto de portfólio localizado em portfolio-ambiental.",
+                         "icon":  "💻",
+                         "id":  "portfolio-ambiental",
+                         "name":  "Portfolio Ambiental",
+                         "tags":  "Web Dev Fullstack"
+                     },
+                     {
+                         "description":  "Projeto de portfólio localizado em portfolio-uxui.",
+                         "icon":  "🎨",
+                         "id":  "portfolio-uxui",
+                         "name":  "Portfolio Uxui",
+                         "tags":  "UX/UI Design"
+                     },
+                     {
+                         "description":  "Projeto de portfólio localizado em shape-ship-studio.",
+                         "icon":  "💻",
+                         "id":  "shape-ship-studio",
+                         "name":  "Shape Ship Studio",
+                         "tags":  "Web Dev Fullstack"
+                     },
+                     {
+                         "description":  "Projeto de portfólio localizado em showcase.",
+                         "icon":  "💻",
+                         "id":  "showcase",
+                         "name":  "Showcase",
+                         "tags":  "Web Dev Fullstack"
+                     }
+                 ]
+}

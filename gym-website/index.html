@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Fitness | Academia Premium</title>
+    <meta name="description" content="A academia do futuro com os melhores equipamentos, aulas em grupo e ambiente imersivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="logo">IRON<span>FORGE</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#classes">Aulas</a></li>
+                <li><a href="#plans">Planos</a></li>
+            </ul>
+        </nav>
+        <a href="#plans" class="cta-btn hidden-mobile">Matricule-se</a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-in">Redefina seus <span>Limites</span></h1>
+                <p class="fade-in delay-1">Equipamentos de ponta e ambiente imersivo para os seus resultados. Sinta a diferença desde o primeiro treino.</p>
+                <div class="hero-buttons fade-in delay-2">
+                    <a href="#plans" class="cta-btn primary">Comece Agora</a>
+                    <a href="#classes" class="cta-btn secondary">Ver Aulas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features/Classes Section -->
+        <section id="classes" class="section dark-bg">
+            <div class="section-container">
+                <h2 class="section-title">Nossas <span>Modalidades</span></h2>
+                <div class="grid cards-container">
+                    <div class="card fade-up">
+                        <div class="card-icon">💪</div>
+                        <h3>Musculação</h3>
+                        <p>Estrutura completa com as melhores máquinas biomecânicas do mercado e pesos livres para todos os níveis.</p>
+                    </div>
+                    <div class="card fade-up delay-1">
+                        <div class="card-icon">🥊</div>
+                        <h3>Lutas</h3>
+                        <p>Boxe, Muay Thai e Jiu-Jitsu com os melhores mestres e tatame premium para seu melhor condicionamento.</p>
+                    </div>
+                    <div class="card fade-up delay-2">
+                        <div class="card-icon">🚴</div>
+                        <h3>Spinning</h3>
+                        <p>Salas imersivas com iluminação neon e som potente para pedalar com energia e queimar muitas calorias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container about-grid">
+                <div class="about-text fade-up">
+                    <h2 class="section-title">Sobre a <span>IronForge</span></h2>
+                    <p>Nascemos para revolucionar o fitness. Não somos apenas uma academia, somos um centro de treinamento de alta performance com um design que inspira você a dar o seu melhor todos os dias.</p>
+                    <p>Nossa iluminação, clima e equipamentos foram cuidadosamente escolhidos para criar a experiência perfeita para transformar seu corpo e mente.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>+2000m²</h4>
+                            <span>Área de Treino</span>
+                        </div>
+                        <div class="stat">
+                            <h4>24h</h4>
+                            <span>Funcionamento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-up delay-1">
+                    <div class="image-placeholder">
+                        <img src="assets/hero_bg.png" alt="Gym Interior" style="width: 100%; height: 100%; object-fit: cover; border-radius: 14px; opacity: 0.8;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="section dark-bg">
+            <div class="section-container">
+                <h2 class="section-title">Escolha seu <span>Plano</span></h2>
+                <div class="grid pricing-container">
+                    <div class="pricing-card fade-up">
+                        <div class="plan-name">Básico Diário</div>
+                        <div class="plan-price">R$ 120<span>/mês</span></div>
+                        <ul class="plan-features">
+                            <li>Acesso livre diário</li>
+                            <li>Musculação e Cardio liberados</li>
+                            <li>Vestiário padrão com armários</li>
+                            <li>Suporte no aplicativo</li>
+                        </ul>
+                        <a href="javascript:void(0)" class="cta-btn secondary full-width" onclick="alert('Funcionalidade de matrícula em breve!')">Assinar Básico</a>
+                    </div>
+                    <div class="pricing-card premium fade-up delay-1">
+                        <div class="popular-tag">Mais Escolhido</div>
+                        <div class="plan-name">Premium Neon</div>
+                        <div class="plan-price">R$ 199<span>/mês</span></div>
+                        <ul class="plan-features">
+                            <li>Acesso 24h a todas as IronForge</li>
+                            <li>Todas as modalidades (Lutas, Dança)</li>
+                            <li>Estúdio Imersivo de Spinning</li>
+                            <li>Avaliação Física Mensal Inclusa</li>
+                        </ul>
+                        <a href="javascript:void(0)" class="cta-btn primary full-width" onclick="alert('Funcionalidade de matrícula em breve!')">Assinar Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>IRON<span>FORGE</span></h2>
+                <p>O futuro do fitness começa aqui. Ambiente de elite, resultados reais.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#classes">Aulas</a></li>
+                    <li><a href="#plans">Matrícula</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>contato@ironforgefitness.com</p>
+                <p>(11) 9999-9999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 IronForge Fitness. Todos os direitos reservados. Protótipo Gerado por IA.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

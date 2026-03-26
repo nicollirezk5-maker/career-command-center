@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolli Rezk | Custom Websites & Portfolios</title>
+    <meta name="description" content="Showcase de sites e portfólios digitais premium criados por Nicolli Rezk.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Decor -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <span class="logo">Nicolli <span>Rezk</span></span>
+            <div class="nav-actions">
+                <div class="lang-group">
+                    <a href="index.html" class="lang-switch">PT</a>
+                    <span class="lang-switch active">EN</span>
+                    <a href="index-es.html" class="lang-switch">ES</a>
+                </div>
+                <div class="nav-tag">Websites & Portfolios</div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="badge fade-up">Top-Tier Sites & Portfolios</div>
+            <h1 class="fade-up delay-1">Transforming Businesses with <span>Impactful Design</span></h1>
+            <p class="fade-up delay-2">I don't just deliver code. I deliver your best digital presence. Explore below the quality and care in every site and portfolio I've developed.</p>
+        </div>
+    </header>
+
+    <div class="showcase-container">
+        <main class="carousel-viewport" id="carousel">
+            <!-- Project 1: UX/UI Portfolio -->
+            <article class="project-card fade-up delay-3">
+                <div class="project-image">
+                    <div class="browser-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="overlay">
+                        <a href="../portfolio-uxui/index.html" class="btn-view">View Live Project</a>
+                    </div>
+                    <img src="assets/ux_real.png" alt="UX Portfolio" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Nicolli Rezk | UX Portfolio</h3>
+                    <p>Data-driven design, user research, and clean interfaces with glassmorphism effects.</p>
+                    <div class="tags">
+                        <span>UX/UI</span>
+                        <span>Research</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Ambiental Engineering -->
+            <article class="project-card fade-up delay-4">
+                <div class="project-image">
+                    <div class="browser-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="overlay">
+                        <a href="../portfolio-ambiental/index.html" class="btn-view">Ver Projeto Vivo</a>
+                    </div>
+                    <img src="assets/env_real.png" alt="Environmental Engineering" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Engenharia Ambiental | Francisco</h3>
+                    <p>Portfólio técnico e profissional para engenheiros com foco em sustentabilidade.</p>
+                    <div class="tags">
+                        <span>Industrial</span>
+                        <span>Academic</span>
+                        <span>Modern UI</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Gym Website -->
+            <article class="project-card fade-up delay-5">
+                <div class="project-image">
+                    <div class="browser-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="overlay">
+                        <a href="../gym-website/index.html" class="btn-view">Ver Projeto Vivo</a>
+                    </div>
+                    <img src="assets/gym_real.png" alt="Gym Website" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Vibe Fitness | Gym Website</h3>
+                    <p>Interface dinâmica, vibrante e focada em conversão para negócios locais.</p>
+                    <div class="tags">
+                        <span>Business</span>
+                        <span>Dynamic</span>
+                        <span>Sales Focus</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Food Delivery -->
+            <article class="project-card fade-up delay-6">
+                <div class="project-image">
+                    <div class="browser-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="overlay">
+                        <a href="../food-delivery/index.html" class="btn-view">Ver Projeto Vivo</a>
+                    </div>
+                    <img src="assets/food_real.png" alt="Food Delivery" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Flash Eats | Food Delivery</h3>
+                    <p>Layout moderno e intuitivo para serviços de entrega rápida e delivery.</p>
+                    <div class="tags">
+                        <span>Startup</span>
+                        <span>E-commerce</span>
+                        <span>UX Focus</span>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <div class="carousel-indicators" id="carousel-dots"></div>
+
+    <div class="carousel-nav container">
+        <button class="nav-btn" onclick="scrollCarousel(-1)"><i data-lucide="chevron-left"></i></button>
+        <button class="nav-btn" onclick="scrollCarousel(1)"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <footer class="contact-cta">
+        <div class="container fade-up delay-7">
+            <h2>Pronto para elevar sua presença digital?</h2>
+            <p>Seja você um profissional autônomo ou uma empresa, eu crio a vitrine perfeita para o seu sucesso na web.</p>
+            <div class="cta-btns">
+
+                <a href="https://www.linkedin.com/in/nicolli-rezk-496417206/" target="_blank" class="btn secondary">Meu LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2026 Nicolli Rezk. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Email copiado!</div>
+
+    <script>
+        lucide.createIcons();
+
+        const carousel = document.getElementById('carousel');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const cards = carousel.querySelectorAll('.project-card');
+        let autoScrollInterval;
+
+        // Create dots
+        cards.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.onclick = () => scrollToCard(index);
+            dotsContainer.appendChild(dot);
+        });
+
+        function scrollToCard(index) {
+            const cardWidth = cards[0].offsetWidth + 32;
+            carousel.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+        }
+
+        function scrollCarousel(direction) {
+            const cardWidth = cards[0].offsetWidth + 32;
+            carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+        }
+
+        function updateDots() {
+            const scrollLeft = carousel.scrollLeft;
+            const cardWidth = cards[0].offsetWidth + 32;
+            const activeIndex = Math.round(scrollLeft / cardWidth);
+            
+            document.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        }
+
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(() => {
+                const cardWidth = cards[0].offsetWidth + 32;
+                const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+                
+                if (carousel.scrollLeft >= maxScroll - 10) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+                }
+            }, 5000);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        carousel.addEventListener('scroll', updateDots);
+        carousel.addEventListener('mouseenter', stopAutoScroll);
+        carousel.addEventListener('mouseleave', startAutoScroll);
+
+        startAutoScroll();
+    </script>
+</body>
+</html>

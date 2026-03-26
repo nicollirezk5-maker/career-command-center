@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape & Ship Studio — We Design, Build & Launch Websites</title>
+    <meta name="description" content="Shape & Ship Studio is a creative web studio. We design, develop, and ship stunning websites for brands worldwide.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="brand">
+                <img src="logo.png" alt="Shape & Ship" class="brand-mark-img">
+                <span>Shape & Ship</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn-nav">Start a Project</a>
+            </div>
+            <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="dot"></span> Available for new projects
+            </div>
+            <h1>We <em>shape</em> ideas into<br>digital experiences.<br>Then we <em>ship</em> them.</h1>
+            <p class="hero-sub">A creative web studio designing and building premium websites for ambitious brands worldwide.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">
+                    <i data-lucide="arrow-right" style="width:18px;height:18px"></i>
+                    Start Your Project
+                </a>
+                <a href="#work" class="btn-ghost">View Our Work</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i data-lucide="mouse" style="width:20px;height:20px"></i>
+            <span>Scroll to explore</span>
+        </div>
+    </header>
+
+    <!-- Metrics -->
+    <section class="metrics">
+        <div class="container metrics-grid">
+            <div class="metric">
+                <strong>50+</strong>
+                <span>Projects Shipped</span>
+            </div>
+            <div class="metric">
+                <strong>12</strong>
+                <span>Countries Served</span>
+            </div>
+            <div class="metric">
+                <strong>100%</strong>
+                <span>Client Satisfaction</span>
+            </div>
+            <div class="metric">
+                <strong>< 2 weeks</strong>
+                <span>Avg. Delivery Time</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <span class="label">What We Do</span>
+            <h2 class="section-title">Services built around<br>your growth.</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="palette"></i></div>
+                    <h3>Web Design</h3>
+                    <p>Custom UI/UX design that captures your brand's essence. Every pixel intentional.</p>
+                    <div class="service-price">
+                        <span class="price-from">From</span>
+                        <strong>$297</strong>
+                    </div>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Custom mockups</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Mobile-first design</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> 2 revision rounds</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_6oUdR81Li6DJ0Tceni8AE01" target="_blank" class="btn-card">Get Started <i data-lucide="credit-card" style="width:14px;height:14px"></i></a>
+                </div>
+                <div class="service-card featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="service-icon"><i data-lucide="code-2"></i></div>
+                    <h3>Design + Development</h3>
+                    <p>Full website: design, responsive code, SEO-optimized, and ready to launch.</p>
+                    <div class="service-price">
+                        <span class="price-from">From</span>
+                        <strong>$597</strong>
+                    </div>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Custom design + code</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Responsive (all devices)</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> SEO optimized</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> 3 revision rounds</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_6oUfZgfC8gej7hA3IE8AE02" target="_blank" class="btn-card btn-card-accent">Get Started <i data-lucide="credit-card" style="width:14px;height:14px"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="rocket"></i></div>
+                    <h3>Launch & Hosting</h3>
+                    <p>Domain setup, hosting, SSL, and ongoing support so you can focus on business.</p>
+                    <div class="service-price">
+                        <span class="price-from">From</span>
+                        <strong>$97</strong>
+                        <span class="price-period">/year</span>
+                    </div>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Domain setup</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> SSL certificate</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Monthly maintenance</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_5kQ7sK61y8LRfO65QM8AE03" target="_blank" class="btn-card">Get Started <i data-lucide="credit-card" style="width:14px;height:14px"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="figma"></i></div>
+                    <h3>Brand Identity</h3>
+                    <p>Logo, color palette, typography, and guidelines that make your brand unforgettable.</p>
+                    <div class="service-price">
+                        <span class="price-from">From</span>
+                        <strong>$197</strong>
+                    </div>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Logo design</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Color & typography</li>
+                        <li><i data-lucide="check" style="width:14px;height:14px"></i> Brand guidelines PDF</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_aFabJ02Pm6DJ59sfrm8AE00" target="_blank" class="btn-card">Get Started <i data-lucide="credit-card" style="width:14px;height:14px"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work" class="work">
+        <div class="container">
+            <span class="label">Selected Work</span>
+            <h2 class="section-title">Projects we're<br>proud of.</h2>
+            <div class="work-grid">
+                <a href="https://food-to-eat-app.surge.sh" target="_blank" class="work-card work-large">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=500&fit=crop" alt="Food to Eat Project">
+                    <div class="work-overlay">
+                        <span class="work-tag">Fast Food Website</span>
+                        <h3>Food to Eat</h3>
+                        <p>Complete food delivery website with cart system, responsive design, and live deployment.</p>
+                    </div>
+                </a>
+                <div class="work-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="SaaS Dashboard">
+                    <div class="work-overlay">
+                        <span class="work-tag">SaaS Dashboard</span>
+                        <h3>Analytics Pro</h3>
+                        <p>Data visualization dashboard with real-time metrics.</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="E-commerce">
+                    <div class="work-overlay">
+                        <span class="work-tag">E-Commerce</span>
+                        <h3>Luxe Boutique</h3>
+                        <p>Premium online store with seamless checkout experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <span class="label">How We Work</span>
+            <h2 class="section-title">Simple process,<br>outstanding results.</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h3>Discovery</h3>
+                    <p>We learn about your brand, goals, and audience to create a tailored strategy.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h3>Design</h3>
+                    <p>We craft mockups and prototypes until every detail feels perfect.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h3>Develop</h3>
+                    <p>We build your site with clean code, responsive layouts, and smooth animations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h3>Ship</h3>
+                    <p>We launch your site, set up hosting, and provide ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="label">About Us</span>
+                <h2 class="section-title">A studio that cares about craft.</h2>
+                <p>Shape & Ship Studio is a boutique creative agency specializing in designing and building premium websites for businesses worldwide. We combine aesthetic excellence with technical precision to create digital experiences that convert visitors into customers.</p>
+                <p>Based in Brazil, working globally. We believe great design is not a luxury — it's a necessity for brands that want to stand out.</p>
+                <div class="about-tags">
+                    <span>UI/UX Design</span>
+                    <span>Front-End Dev</span>
+                    <span>Responsive</span>
+                    <span>SEO</span>
+                    <span>Branding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="contact">
+        <div class="container contact-inner">
+            <span class="label">Let's Work Together</span>
+            <h2>Have a project<br>in mind?</h2>
+            <p>Tell us about your idea and we'll get back to you within 24 hours.</p>
+            <a href="mailto:nicollirezk5@gmail.com" class="btn-primary btn-large">
+                <i data-lucide="send" style="width:18px;height:18px"></i>
+                Get in Touch
+            </a>
+            <div class="contact-info">
+                <span><i data-lucide="mail" style="width:14px;height:14px"></i> nicollirezk5@gmail.com</span>
+                <span><i data-lucide="globe" style="width:14px;height:14px"></i> Worldwide</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand">
+                    <img src="logo.png" alt="Shape & Ship" class="brand-mark-img">
+                    <span>Shape & Ship</span>
+                </div>
+                <p>We shape ideas. We ship results.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Shape & Ship Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

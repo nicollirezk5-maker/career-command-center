@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food to Eat | Bateu a fome? Peça agora!</title>
+    <meta name="description" content="Food to Eat - Fast food de qualidade com entrega ultra rápida. Burgers, batatas e milkshakes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <span class="logo-text">Food to <strong>Eat</strong></span>
+            </a>
+            <div class="nav-right">
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#promos" class="nav-link">Promoções</a>
+                <button class="cart-btn" id="cartToggle" onclick="openCart()">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">
+                    <i data-lucide="clock" style="width:14px;height:14px"></i>
+                    Entrega em até 30 min
+                </span>
+                <h1>A fome <span class="highlight">não espera.</span><br>Peça agora!</h1>
+                <p class="hero-desc">Qualidade de restaurante com a velocidade que o seu dia a dia exige. Ingredientes frescos e selecionados.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary">
+                        <i data-lucide="utensils" style="width:18px;height:18px"></i>
+                        Ver Cardápio
+                    </a>
+                    <a href="#promos" class="btn-secondary">Promoções do Dia</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>4.9</strong>
+                        <span>⭐ Avaliação</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>30min</strong>
+                        <span>Entrega média</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>2k+</strong>
+                        <span>Pedidos/mês</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=600&fit=crop" alt="Hambúrguer suculento" class="hero-img">
+                </div>
+                <div class="floating-badge badge-1">
+                    <i data-lucide="flame" style="width:16px;height:16px;color:#da291c"></i>
+                    <span>Mais vendido</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <span class="badge-price">R$ 34,90</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Promos Banner -->
+    <section class="promo-banner" id="promos">
+        <div class="container">
+            <div class="promo-card">
+                <div class="promo-text">
+                    <span class="promo-tag">Promoção</span>
+                    <h3>Combo Especial do Dia</h3>
+                    <p>Burger + Batata + Refri por apenas <strong>R$ 39,90</strong></p>
+                </div>
+                <a href="#menu" class="btn-primary btn-small">Pedir Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <main class="container">
+        <section id="menu" class="menu">
+            <div class="section-header">
+                <span class="section-label">🔥 Mais Pedidos</span>
+                <h2 class="section-title">Nosso Cardápio</h2>
+                <p class="section-desc">Escolha seus favoritos e receba rapidinho na sua porta.</p>
+            </div>
+            <div class="food-grid" id="foodGrid">
+                <!-- Itens injetados via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3><i data-lucide="shopping-bag" style="width:20px;height:20px"></i> Seu Pedido</h3>
+            <button class="cart-close" id="cartClose" onclick="closeCart()">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="cart-drawer-body" id="cartBody">
+            <!-- Items rendered by JS -->
+        </div>
+        <div class="cart-drawer-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">R$ 0,00</strong>
+            </div>
+            <button class="btn-primary btn-checkout" id="btnCheckout" onclick="handleCheckout()">
+                Finalizar Pedido
+            </button>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">Food to <strong>Eat</strong></span>
+                <p>Feito com ❤️ para matar sua fome.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
