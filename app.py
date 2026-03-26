@@ -4,8 +4,9 @@ from flask import Flask, request, jsonify, render_template, send_from_directory
 
 app = Flask(__name__)
 
-PORTFOLIO_ROOT = "C:\\Users\\loja\\.gemini\\antigravity\\scratch\\career-ai"
+PORTFOLIO_ROOT = os.path.dirname(os.path.abspath(__file__))
 PROPOSALS_FILE = os.path.join(PORTFOLIO_ROOT, "minhas_propostas.md")
+
 
 def get_portfolio_projects():
     projects = []
