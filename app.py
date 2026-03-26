@@ -127,5 +127,15 @@ def chat():
     response = orchestrator(user_message)
     return jsonify({"response": response})
 
+@app.route("/api/debug")
+def api_debug():
+    return jsonify({
+        "cwd": os.getcwd(),
+        "portfolio_root": PORTFOLIO_ROOT,
+        "listdir": os.listdir(PORTFOLIO_ROOT) if os.path.exists(PORTFOLIO_ROOT) else "NOT_FOUND",
+        "proposals_exists": os.path.exists(PROPOSALS_FILE)
+    })
+
 if __name__ == "__main__":
+
     app.run(debug=True, port=5000)
