@@ -122,6 +122,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const jobsData = await jobsResponse.json();
         document.getElementById('count-jobs').innerText = jobsData.jobs.length;
 
+        // GitHub Sync
+        try {
+            const githubResponse = await fetch('/api/github');
+            const githubData = await githubResponse.json();
+            if (githubData.user && githubData.user.login) {
+                // Add GitHub Stat if we want, or just show it in the split
+                const featuredProjects = document.getElementById('featured-projects');
+                const githubCard = document.createElement('div');
+                githubCard.className = 'project-card content-fade github-profile-card';
+                githubCard.innerHTML = `
+                    <div class="project-info" style="padding: 2rem;">
+                        <img src="${githubData.user.avatar_url}" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 1rem;">
+                        <h4>GitHub: ${githubData.user.login}</h4>
+                        <p>${githubData.user.public_repos} repositórios públicos detectados.</p>
+                        <button class="btn-primary-outline" style="margin-top: 1rem;" onclick="window.open('${githubData.user.html_url}', '_blank')">Ver Perfil</button>
+                    </div>
+                `;
+                featuredProjects.prepend(githubCard);
+            }
+        } catch (e) {
+            console.error("GitHub Error:", e);
+        }
+
         // Firebase Sync: Ganhos
         const q = query(collection(db, "ganhos"), orderBy("timestamp", "desc"));
         const financeList = document.getElementById('finance-list');

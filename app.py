@@ -127,6 +127,37 @@ def chat():
     response = orchestrator(user_message)
     return jsonify({"response": response})
 
+@app.route("/api/github")
+def api_github():
+    try:
+        import subprocess
+        import json
+        # Fetch user info
+        user_result = subprocess.run(["gh", "api", "user"], capture_output=True, text=True)
+        user_info = json.loads(user_result.stdout) if user_result.returncode == 0 else {}
+        
+        # Fetch repos
+        repos_result = subprocess.run(["gh", "api", "user/repos?sort=updated&per_page=5"], capture_output=True, text=True)
+        repos = json.loads(repos_result.stdout) if repos_result.returncode == 0 else []
+        
+        return jsonify({
+            "user": {
+                "login": user_info.get("login"),
+                "avatar_url": user_info.get("avatar_url"),
+                "html_url": user_info.get("html_url"),
+                "public_repos": user_info.get("public_repos")
+            },
+            "repos": [{
+                "name": r.get("name"),
+                "html_url": r.get("html_url"),
+                "description": r.get("description"),
+                "stargazers_count": r.get("stargazers_count"),
+                "language": r.get("language")
+            } for r in repos]
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.route("/api/debug")
 def api_debug():
     return jsonify({
